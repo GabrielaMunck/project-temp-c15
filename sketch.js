@@ -2,7 +2,8 @@
 //Declare a variável para PLAY e END
 //inicialize o valor para a variável
 //Atribua o valor de gameState como PLAY
-
+var PLAY
+var END
 var bow , arrow,  background, redB, pinkB, greenB ,blueB ,arrowGroup;
 var bowImage, arrowImage, green_balloonImage, red_balloonImage, pink_balloonImage ,blue_balloonImage, backgroundImage;
 
@@ -46,6 +47,7 @@ function setup() {
 function draw() {
  background(0);
 //Adicione a condição para gameState = PLAY
+
   // solo em movimento
     scene.velocityX = -3 
 
@@ -90,7 +92,11 @@ function draw() {
  //Adicione o código para destruir o arco
  //defina a velocidade do fundo como 0
  
+if (gameState = END){
+   bow.destroy;
+   background.velocity = 0;
 
+}
 
 
 
@@ -99,6 +105,7 @@ function draw() {
   
   drawSprites();
 //Adicione a condição de texto para exibir a pontuação.
+text = points+score;
 }
 
 
